@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root  {
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+h1 {
+    font-weight: 900;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -10rem;
+    color: var(--desaturated-blue);
+    font-size: 16px;
+}
+
+h1,strong {
+    color: var(--dark-blue);
+}
+
+strong {
+    font-weight: 900;
+}
+
+.card {
+    background-color: white;
+    width: 450px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 3rem auto;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.summary {
+    padding: 1rem 4rem;
+    padding-bottom: 5rem;
+}
+
+.item-info {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-sp;
+    align-items: center;
+}
+
+.item-info img {
+    margin: 0 1rem;
+}
+
+.item {
+    background-color: rgb(248,249,254);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-actions {
+    padding: 1rem;
+}
+
+.item a:hover {
+   color: rgb(118,108,241)
+}
+
+.btn {
+    border: none;
+    background-color: var(--bright-blue);
+    color:white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border-radius: .75rem;
+    margin: 2rem 0;
+    box-shadow: 0px 30px 32px -9px rgba(56,41,224,0.28);
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: rgb(118,108,241);
+}
+
+.secondary {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+
+@media (max-width: 450px) {
+
+    body {
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-position-y: 10rem;
+    }
+
+    h1 {
+        font-size: 1.6rem
+    }
+    
+    .summary {
+        padding: 1rem 2rem;
+        padding-bottom: 2.5rem;
+        line-height: 1.5rem;
+    }
+
+    .item-actions {
+        padding: 1.6rem;
+    }
+
+}
