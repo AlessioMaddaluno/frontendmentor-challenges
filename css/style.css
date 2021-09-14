@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    display: block;
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 1px solid #eee;
+}
+
+.container {
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header p {
+    margin: 1rem auto;
+}
+
+
+main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: .75rem;
+}
+
+main a {
+    display: block;
+}
+
+.challenge {
+    border-radius: 5px;
+    min-height: 250px;
+    padding: 1rem;
+    position: relative;
+}
+
+.challenge span {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    background-color: #2c3e50;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0 ;
+    padding: .65rem;
+}
+
+
+.btns {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    padding: .65rem;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-source {
+    background-color:#333;
+    color:white;
+}
+
+.btn-demo {
+    background-color:#2980b9;
+    color:white;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: .65rem;
+    }
+   
+}
+
+@media (max-width: 750px) {
+
+    main {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: .55rem;
+    }
+   
+}

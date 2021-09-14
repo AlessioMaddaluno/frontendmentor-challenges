@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; color:white; }
+.attribution a { color: white; }
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --vd-blue: hsl(233, 47%, 7%);
+    --dd-blue: hsl(244, 38%, 16%);
+    --s-violet: hsl(277, 65%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --t-white: hsla(0, 0%, 100%, 0.75);
+    --dt-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--vd-blue);
+    font-family: 'Inter', sans-serif;
+}
+
+h1,h2 {
+    color: var(--white);
+}
+
+mark {
+    color: var(--s-violet);
+    background-color: transparent;
+}
+
+.card {
+    display: flex;
+    background-color: var(--dd-blue);
+    color: hsla(0, 0%, 100%, 0.75);
+    max-width: 960px;
+    margin: 3rem auto;
+    border-radius: .75rem;
+}
+
+.card-text {
+    padding: 3rem;
+    flex-basis: 100%;
+}
+
+.card-text p {
+    padding: 2rem 0;
+    line-height: 1.5rem;
+}
+
+.card-image {
+    background: linear-gradient(rgba(170,92,219,.5), rgba(170,92,219,.5)),url('../images/image-header-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-basis: 100%;
+    border-radius: 0 .75rem .75rem 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.stats span {
+    text-transform: uppercase;
+    font-size: .75rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 750px){
+
+    .card {
+        flex-direction: column-reverse;
+        margin: 1rem ;
+    }
+
+    .card-text  {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .card-image {
+        min-height: 250px;
+        border-radius: .75rem .75rem 0 0;
+        background: linear-gradient(rgba(170,92,219,.5), rgba(170,92,219,.5)),url('../images/image-header-mobile.jpg');
+        background-position: center;
+         background-size: cover;
+    }
+
+    .stats {
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+
+    .stats div {
+        margin: 1rem auto;
+    }
+    
+}
