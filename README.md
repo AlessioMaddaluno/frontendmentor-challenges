@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges
 
-Frontend Mentor challegnes solutions.
+[Frontend Mentor](https://www.frontendmentor.io/challenges) challenges solutions.
 
 ## Description
 
