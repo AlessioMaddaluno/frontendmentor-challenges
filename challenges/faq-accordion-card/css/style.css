@@ -15,6 +15,10 @@
     --soft-red: hsl(14, 88%, 65%);
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 body {
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
@@ -28,6 +32,123 @@ main {
     width: 920px;
     max-width: 100%;
     background-color: white;
-    height: 100px;
-    margin: 3rem auto;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: relative;
+  
+
+}
+
+.faq-images {
+    position: relative;
+    padding: 5rem;
+    overflow: hidden;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: -18rem;
+    background-position-x: -35rem;
+}
+
+.faq-images-mobile{
+    background-image: url('../images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 2rem;
+}
+
+.faq-images-mobile {
+    display: none;
+}
+
+#woman-desktop {
+    position: absolute;
+    top:0;
+    left: -5rem;
+    top: 5rem;
+    z-index: 1;
+}
+
+#box {
+    position: absolute;
+    top: 13.5rem;
+    left:-6rem;
+    z-index: 2;
+}
+
+.accordion-container {
+    padding:4rem;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--light-grayish-blue);
+    border: none;
+    margin: 1rem 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+label:hover {
+    color: var(--soft-red);
+}
+
+.accordion section {
+    display: none;
+    padding-top: 1rem;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-header button {
+    border:none;
+    background:transparent;
+    cursor: pointer;
+}
+
+.active section{
+    display: block;
+}
+
+.active label {
+    font-weight: bold;
+}
+
+
+@media (max-width:790px) {
+
+    main {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .faq-images, #box {
+        display: none;
+    }
+
+    .faq-images-mobile {
+        display: inline-block;
+    }
+
+    #woman-mobile{
+    
+       display: block;
+       margin: -6.5rem auto 0 auto;
+    }
+
+    .accordion-container {
+        padding-top: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    
+    
 }
