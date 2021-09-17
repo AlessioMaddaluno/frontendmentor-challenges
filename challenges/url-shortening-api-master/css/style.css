@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --red: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--very-dark-blue);
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 1rem;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+nav {
+    color: var(--grayish-violet);
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav hr {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.nav-menu {
+    padding: 0 2rem;
+    display: flex;
+    font-weight: 700;
+}
+
+.nav-menu a {
+    padding: 0.75rem 1rem;
+}
+
+.nav-menu a:hover {
+    color: var(--very-dark-blue);
+}
+
+.auth-btns {
+    font-weight: 700;
+}
+
+.auth-btns > *{
+    margin: 0 1.5rem;
+}
+
+#burger-icon {
+    display: none;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 2rem;
+    padding: .75rem 1.5rem;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: var(--cyan);
+    color:white;
+}
+
+.btn-primary:hover {
+    background-color: #9CE2E0;
+    color:white;
+}
+
+@media (max-width: 800px) {
+
+   nav {
+       display:  block;
+   }
+
+   .nav-links {
+       display: none;
+       flex-direction: column;
+       background-color: var(--dark-violet);
+       padding: 2rem 1rem;
+       border-radius: 1rem;
+   }
+
+   .nav-menu {
+       flex-direction: column;
+       padding: 0;
+   }
+
+   .nav-menu li {
+       padding-bottom: 2rem;
+       text-align: center;
+       color:var(--gray);
+   }
+
+   .auth-btns {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+   }
+
+   .auth-btns > * {
+       margin: 0.5rem 0;
+       display: block;
+       width: 100%;
+       text-align: center;
+       flex-grow: 1;
+   }
+   
+   nav hr {
+       display: block;
+       width: 100%;
+       border: 0;
+       height: 1px;
+       background: var(--grayish-violet);
+   }
+
+   .nav-logo {
+       display: flex;
+       justify-content: space-between;
+   }
+   #burger-icon {
+       display: block;
+   }
+
+   .visible {
+       display: block;
+   }
+
+    
+}
