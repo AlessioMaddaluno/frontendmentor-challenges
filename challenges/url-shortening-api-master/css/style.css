@@ -114,6 +114,11 @@ nav hr {
     color:white;
 }
 
+.btn-dark {
+    background-color:var(--very-dark-blue);
+    color:white;
+}
+
 .btn-primary:hover {
     background-color: #9CE2E0;
     color:white;
@@ -197,6 +202,7 @@ footer ul li:first-child{
     padding: 2rem;
     border-radius: .75rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .shortner-container > * {
@@ -207,6 +213,14 @@ footer ul li:first-child{
     padding: .75rem 1.5rem; 
     border:none;
     flex-grow: 1;
+}
+
+#error {
+    color:red;
+    font-size:1rem;
+    margin: .75rem;
+    flex-grow: 1;
+    width: 100%;
 }
 
 .shortner-container input,button{
@@ -297,6 +311,9 @@ footer ul li:first-child{
     margin: 0;
 }
 
+.url-short {
+    color: var(--cyan);
+}
 
 @media (max-width: 800px) {
 
@@ -340,7 +357,7 @@ footer ul li:first-child{
        flex-grow: 1;
    }
    
-   nav hr {
+   hr {
        display: block;
        width: 100%;
        border: 0;
@@ -385,10 +402,21 @@ footer ul li:first-child{
 
    .shortner-container,.url-shortned-container{
        flex-direction: column;
+       text-align: left;
    }
 
    .url-shortned-container{
-    flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .url-shortned-container > * {
+        width: 100%;
+        text-align: left;
+    }
+
+    .actions button {
+        width:100%;
+        margin-top: .5rem;
     }
 
    .shortner-container button {

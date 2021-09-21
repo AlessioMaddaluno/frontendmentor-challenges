@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   </head>
   <body>
@@ -53,16 +54,13 @@
         <section class="container">
           <section class="shortner-section">
             <div class="shortner-container">
-              <input type="text" placeholder="Shorten a link here...">
-              <button class="btn btn-primary">Shorten It!</button>
+              <input id="urlInput" type="text" placeholder="Shorten a link here...">
+              <button id="urlInputBtn" class="btn btn-primary">Shorten It!</button>
+              <p id="error"></p>
             </div>
-            <div class="url-shortned-container">
-              <div class="url"> http://www.goooooooooooogle.it </div>
-              <div class="url-short"> http://www.short.it </div>
-              <div class="actions">
-                <button class="btn btn-primary">Copy</button>
-              </div>
-            </div>
+            
+            <div id="urls"></div>
+           
           </section>
           <section class="statistics-section">
             <div class="stats-text">
