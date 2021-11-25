@@ -1,0 +1,24 @@
+.card {
+  box-shadow: 0px 0px 13px 2px #e1e1e1;
+  max-width: 320px;
+  display: inline-block;
+  border-radius: .45rem;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+
+.country-info {
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1.4rem;
+}
+
+ul li {
+  margin: .3rem auto;
+}
+
+
