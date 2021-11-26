@@ -1,4 +1,4 @@
-<a routerLink="/test" style="cursor: pointer;">
+<a [routerLink]="'/country-detail/'+country?.cca2" style="cursor: pointer;">
   <div class="card">
     <img [src]="country?.flags?.png">
     <div class="country-info">

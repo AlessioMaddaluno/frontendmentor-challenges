@@ -5,6 +5,7 @@ import { CardComponent } from './card/card.component';
 import { SearchComponent } from './search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -16,6 +17,7 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
     CountryDetailComponent
   ],
   imports: [
+    AppRoutingModule,
     CommonModule,
     ReactiveFormsModule
   ],

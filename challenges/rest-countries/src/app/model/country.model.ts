@@ -1,28 +1,7 @@
-export interface Prs {
-  official: string;
-  common: string;
-}
-
-export interface Pus {
-  official: string;
-  common: string;
-}
-
-export interface Tuk {
-  official: string;
-  common: string;
-}
-
-export interface NativeName {
-  prs: Prs;
-  pus: Pus;
-  tuk: Tuk;
-}
-
 export interface Name {
   common: string;
   official: string;
-  nativeName: NativeName;
+  nativeName: any;
 }
 
 export interface AFN {
@@ -30,20 +9,11 @@ export interface AFN {
   symbol: string;
 }
 
-export interface Currencies {
-  AFN: AFN;
-}
-
 export interface Idd {
   root: string;
   suffixes: string[];
 }
 
-export interface Languages {
-  prs: string;
-  pus: string;
-  tuk: string;
-}
 
 export interface Ara {
   official: string;
@@ -229,13 +199,13 @@ export interface Country {
   independent: boolean;
   status: string;
   unMember: boolean;
-  currencies: Currencies;
+  currencies: any;
   idd: Idd;
   capital: string[];
   altSpellings: string[];
   region: string;
   subregion: string;
-  languages: Languages;
+  languages: any;
   translations: Translations;
   latlng: number[];
   landlocked: boolean;

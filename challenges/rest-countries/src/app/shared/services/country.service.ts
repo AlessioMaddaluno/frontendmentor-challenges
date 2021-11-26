@@ -7,16 +7,20 @@ import { Country } from "src/app/model/country.model";
  })
 export class CountryService {
 
-  baseUrl = 'https://restcountries.com/v3.1';
+  baseUrl = 'https://restcountries.com/';
 
   constructor(private http: HttpClient){}
 
   getAll(){
-    return this.http.get<Country[]>(this.baseUrl + '/all')
+    return this.http.get<Country[]>(this.baseUrl + '/v3.1/all')
   }
 
   searchByName(countryName:string){
-    return this.http.get<Country[]>(this.baseUrl + `/name/${countryName}`)
+    return this.http.get<Country[]>(this.baseUrl + `/v3.1/name/${countryName}`)
+  }
+
+  findByCode(countryCode:string){
+    return this.http.get<Country[]>(this.baseUrl + `/v3.1/alpha/${countryCode}`)
   }
 
 

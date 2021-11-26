@@ -51,4 +51,11 @@ input[type="text"] {
   margin: 0 .6rem;
 }
 
+a:visited,a {
+  color:inherit;
+}
+
+ul {
+  list-style: none;
+}
 

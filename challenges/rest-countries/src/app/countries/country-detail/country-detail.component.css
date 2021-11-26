@@ -1,0 +1,32 @@
+.controls-bar {
+  margin: 3rem 0;
+}
+
+.country-detail-panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.country-detail-panel > div > *{
+  margin: 2rem 0;
+}
+
+.country-detail-panel > div > div:first-child {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.country-detail-panel img {
+  max-width: 600px;
+}
+
+
+.btn {
+  background-color: white;
+  padding: .7rem 1.5rem;
+  border-radius: .75rem;
+  box-shadow: 0px 0px 13px 2px #e1e1e1;
+  border:none;
+  cursor: pointer;
+}

@@ -1,1 +1,34 @@
-<p>country-detail works!</p>
+<div class="controls-bar">
+  <a routerLink="/"><button class="btn"><i class="fas fa-arrow-left"></i> Back</button></a>
+</div>
+<div *ngIf="countryDetails" class="country-detail-panel">
+  <img [src]="country?.flags?.svg" />
+  <div class="country-details">
+    <h3>{{ countryDetails['name'] }}</h3>
+    <div>
+      <div>
+        <ul>
+          <li><strong>Native Name:</strong> {{ countryDetails.officalName }} </li>
+          <li><strong>Population: </strong> {{ countryDetails.population }}</li>
+          <li><strong>Region: </strong> {{ countryDetails.region }}</li>
+          <li><strong>Sub Region:</strong> {{countryDetails.subregion}} </li>
+          <li><strong>Capital:</strong> {{ countryDetails.capital }}</li>
+        </ul>
+        <ul>
+          <li><strong>Top level domain:</strong> {{countryDetails.tld }} </li>
+          <li><strong>Currencies:</strong>
+            <span *ngFor="let c of countryDetails.currencies ">
+              {{ c + ' ' }}
+            </span>
+          </li>
+          <li><strong>Languages:</strong>
+            <span *ngFor="let l of countryDetails.languages ">
+              {{ l + ' ' }}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div><strong>Border Countries: </strong> <span *ngFor="let b of country?.borders">{{ b + ' '}}</span> </div>
+  </div>
+</div>
