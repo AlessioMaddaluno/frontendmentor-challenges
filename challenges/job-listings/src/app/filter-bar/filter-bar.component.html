@@ -1,0 +1,10 @@
+<div class="filter-bar-container" *ngIf="filters.length">
+  <div class="div">
+    <span *ngFor="let filter of filters" class="tag" (click)="onClear(filter)">
+      {{ filter }}
+    </span>
+  </div>
+  <div>
+    <h4 class="clear" (click)="onClear()">Clear</h4>
+  </div>
+</div>

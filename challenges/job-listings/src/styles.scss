@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+@import "colors";
+
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  background: {
+    color: $color-light-grayish-cyan
+  };
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  color: $color-desaturated-dark-cyan;
+}
+
+.container {
+  padding: .75rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.tag {
+  background: {
+    color:$color-light-grayish-cyan-f
+  };
+  padding: .5rem;
+  border-radius: .3rem;
+  color: $color-desaturated-dark-cyan;
+  margin: .3rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.tag:hover {
+  background: {
+    color: $color-desaturated-dark-cyan
+  };
+  color:$color-light-grayish-cyan-f;
+}
+
+.badge {
+  margin: .4rem;
+  font-size: .65rem;
+  border-radius: 1rem;
+  padding: .3rem;
+}
+
+.badge-primary {
+  background:  $color-desaturated-dark-cyan;
+  color: $color-light-grayish-cyan-f;
+}
+
+.badge-secondary {
+  color: white;
+  background: black;
+}
+
+strong {
+  color: $color-desaturated-dark-cyan;
+}

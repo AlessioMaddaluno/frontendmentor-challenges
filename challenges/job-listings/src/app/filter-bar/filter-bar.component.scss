@@ -1,0 +1,29 @@
+@import "../../utility";
+@import "../../colors";
+
+.filter-bar-container {
+  box-shadow: 1px 4px 15px -1px rgba(0,0,0,0.20);
+  border-radius: .35rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear {
+  cursor: pointer;
+}
+
+.clear:hover {
+  text-decoration: underline;
+  color: $color-desaturated-dark-cyan
+}
+
+.tag {
+  display: inline-flex;
+}
+
+.tag > .delete-icon{
+  background-color: red;
+}

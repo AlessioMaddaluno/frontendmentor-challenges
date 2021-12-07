@@ -1,0 +1,8 @@
+<header></header>
+
+<div class="container">
+  <app-filter-bar [filters]="filters" (clearFilter)="onClearFilters($event)"></app-filter-bar>
+  <ng-container *ngFor="let job of data">
+    <app-job [jobData]="job" (tagSearchClick)="onTagSearch($event)"></app-job>
+  </ng-container>
+</div>

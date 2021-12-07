@@ -1,0 +1,10 @@
+@import "../colors";
+
+header {
+  min-height: 150px;
+  margin-bottom: 2rem;
+  background: {
+    image: url("../assets/images/bg-header-desktop.svg");
+    color: $color-desaturated-dark-cyan;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="job-container mt-1 mb-2 p-1">
+  <div class="job-image">
+    <img [src]="'../../assets/'+jobData?.logo">
+  </div>
+  <div class="p-1">
+    <div class="mt-1 mb-1">
+      <strong>{{ jobData?.company }}</strong>
+      <strong *ngIf="jobData?.new" class="badge badge-primary">NEW!</strong>
+      <strong *ngIf="jobData?.featured" class="badge badge-secondary">FEATURED</strong>
+    </div>
+    <div class="mb-1">
+      <h3><a href="#">{{ jobData?.position }}</a></h3>
+    </div>
+    <div class="info-container">
+      {{ jobData?.postedAt }} • {{ jobData?.contract }} • {{ jobData?.location }}
+    </div>
+  </div>
+  <div class="tags-container">
+    <ng-container *ngFor="let t of jobData?.languages">
+      <span class="tag" (click)="onTagClick(t)">
+       {{ t }}
+      </span>
+    </ng-container>
+  </div>
+</div>

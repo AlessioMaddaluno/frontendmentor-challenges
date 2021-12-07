@@ -1,0 +1,48 @@
+@import "../../utility";
+@import "../../colors";
+
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 4px 15px -1px rgba(0,0,0,0.20);
+  border-radius: .35rem;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.job-container:hover {
+  border-left: 5px solid $color-desaturated-dark-cyan;
+}
+
+.tags-container {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.info-container {
+  color: $color-dark-grayish-cyan;
+}
+
+@media (max-width: 768px){
+
+  .job-container {
+    flex-direction: column;
+    justify-content: start;
+    align-items: normal;
+    position: relative;
+    margin-top: 3.5rem;
+  }
+
+  .tags-container {
+    text-align: left;
+  }
+
+  .job-image {
+    position: absolute;
+    transform: scale(.75);
+    top: -50px;
+
+  }
+
+}
