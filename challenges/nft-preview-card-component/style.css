@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue);
+}
+
+.outline-1 {
+    background-color: #0C172C; 
+    padding: 2.5rem 1.75rem;
+    border-radius: 3rem;
+}
+
+.outline-2 {
+    background-color: #0C1729;
+    padding: rem;
+    border-radius: 3rem;
+}
+
+.card {
+    margin: 20vh auto;
+    max-width: fit-content;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card a:hover {
+    color: var(--cyan);
+}
+
+.card hr {
+    border: none;
+    height: 1px;
+    background-color: var(--soft-blue)
+}
+
+.card-content {
+    background-color: var(--very-dark-blue-card-bg);
+    color: var(--soft-blue);
+    border-radius: 1rem;
+    max-width:350px;
+    margin-top: -30px;
+    padding: 1.4rem;
+}
+
+.card-image {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-image {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(00,255,255, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-image:hover .overlay {
+    opacity: 1;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.overlay img {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.card-info h3 {
+    color: var(--white);
+    margin: 1rem auto;
+}
+
+.card-info .metrics {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+
+.metrics .ethereum-price {
+    color:var(--cyan);
+}
+
+.metrics .ethereum-price::before {
+    content: url('images/icon-ethereum.svg');
+}
+
+.metrics .timestamp {
+    color: var(--soft-blue)
+}
+
+.metrics .timestamp::before {
+    content: url('images/icon-clock.svg');
+}
+
+
+.author {
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.author .author-name {
+    color: white;
+}
+
+.profile-image img {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
