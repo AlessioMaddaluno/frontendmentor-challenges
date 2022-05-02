@@ -1,7 +1,0 @@
-.search-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 100%;
-  margin: 4rem 0;
-}
