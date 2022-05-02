@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap');
+
+/* Reset */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#rating-component {
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    color:var(--medium-grey);
+    padding: 2rem;
+    max-width: 100%;
+    width: 450px;
+}
+
+#icon-star {
+    background-color: #1b222b;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+}
+
+#rating-component h1 {
+    color: var(--white);
+    margin: .5rem auto;
+}
+
+#rating-scale {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#rating-scale > li {
+    color:white;
+    cursor: pointer;
+    background-color: #1b222b;
+    margin: 2rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#rating-scale > li:hover {
+    background-color: var(--medium-grey);
+}
+
+button {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .75rem;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    background-color: var(--orange);
+    color:white;
+    border-radius: 1rem;
+    border: none;
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: white;
+}
+
+.selected-rate {
+    background-color: var(--orange) !important;
+}
+
+#thank-you-state {
+    text-align: center;
+}
+
+#thank-you-state > img {
+    display: block;
+    margin: 2rem auto;
+}
+
+#selected-choice {
+    background-color: #1b222b;
+    display: inline-block;
+    padding: .5rem;
+    border-radius: 1rem;
+    color: var(--orange);
+}
