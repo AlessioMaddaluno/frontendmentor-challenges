@@ -12,22 +12,25 @@ const challenges = [
 
 
 const createChallengeElement = function(id,name){
-    return `<div class="challenge" id="interactive-rating-component" style="background-image: url('../images/${id}.jpg') ">
-    <span>${name}</span>
-    <div class="btns">
-        <a href="https://github.com/AlessioMaddaluno/frontendmentor-challenges/tree/main/challenges/${id}" target="_blank">
-            <button class="btn btn-source">
-                <i class="fas fa-code fa-2x"></i>
-            </button>
-        </a>
-        <a href="challenges/${id}" target="_blank">
-            <button class="btn btn-demo">
-                <i class="far fa-eye fa-2x"></i>
-            </button>
-        </a>
+    return `
+    <div class="challenge">
+        <img src="../images/${id}.jpg">
+        <div class="metadata">
+            <h4>${name}</h4>
+            <a href="challenges/${id}" target="_blank">
+                <button class="btn btn-red"><i class="fa-solid fa-eye"></i> Demo</button>
+            </a>
+            <a href="https://github.com/AlessioMaddaluno/frontendmentor-challenges/tree/main/challenges/${id}" target="_blank">
+                <button class="btn btn-dark"><i class="fa-solid fa-code"></i> Code</button>
+            </a>
+        </div> 
     </div>
-    </div>`
+    `
+    
 }
+
+
+
 
 for (let challenge of challenges){
     document.getElementById('challenges-gallery').innerHTML += createChallengeElement(challenge.id,challenge.name);
