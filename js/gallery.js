@@ -7,7 +7,8 @@ const challenges = [
     {id: "nft-preview-card-component",name: "NFT Preview Card"},
     {id: "order-summary",name: "Order Summary"},
     {id: "stats-preview-card",name: "Stats preview card"},
-    {id: "url-shortening-api-master",name: "Url Shortening Api"}
+    {id: "url-shortening-api-master",name: "Url Shortening Api"},
+    {id: "qr-code-component",name: "QR Code Component"}
 ]
 
 
